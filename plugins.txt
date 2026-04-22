@@ -14,7 +14,7 @@ footyroom
 globalnews
 lequipe
 mlssoccer
-pluzz
+francetv
 RSS
 rtmpDump
 sfr
