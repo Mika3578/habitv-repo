@@ -3,21 +3,21 @@
   <groupId>com.dabi.habitv</groupId>
   <artifactId>api</artifactId>
   <versioning>
-    <lastUpdated>20260422132237</lastUpdated>
+    <lastUpdated>20260422134130</lastUpdated>
     <snapshot>
-      <timestamp>20260422.132237</timestamp>
+      <timestamp>20260422.134130</timestamp>
       <buildNumber>1</buildNumber>
     </snapshot>
     <snapshotVersions>
       <snapshotVersion>
         <extension>pom</extension>
-        <value>4.1.0-20260422.132237-1</value>
-        <updated>20260422132237</updated>
+        <value>4.1.0-20260422.134130-1</value>
+        <updated>20260422134130</updated>
       </snapshotVersion>
       <snapshotVersion>
         <extension>jar</extension>
-        <value>4.1.0-20260422.132237-1</value>
-        <updated>20260422132237</updated>
+        <value>4.1.0-20260422.134130-1</value>
+        <updated>20260422134130</updated>
       </snapshotVersion>
     </snapshotVersions>
   </versioning>
