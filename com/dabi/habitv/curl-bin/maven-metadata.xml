@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata>
+  <groupId>com.dabi.habitv</groupId>
+  <artifactId>curl-bin</artifactId>
+  <versioning>
+    <latest>8.19.0_8</latest>
+    <release>8.19.0_8</release>
+    <versions>
+      <version>8.19.0_8</version>
+    </versions>
+    <lastUpdated>20260422110042</lastUpdated>
+  </versioning>
+</metadata>
