@@ -40,9 +40,9 @@ $ProtectedFileNames = @(
     'maven-metadata.xml.sha1'
 )
 
-# artifact-{baseVersion}-{yyyyMMdd.HHmmss}-{buildNumber}[.jar|.pom][.md5|.sha1]
+# artifact-{baseVersion}-{yyyyMMdd.HHmmss}-{buildNumber}[-{classifier}][.jar|.pom][.md5|.sha1]
 $SnapshotArtifactRegex = [regex]::new(
-    '^(?<prefix>.+)-(?<base>\d+\.\d+\.\d+(?:\.\d+)?)-(?<timestamp>\d{8}\.\d{6})-(?<build>\d+)(?<ext>\.(?:jar|pom)(?:\.(?:md5|sha1))?)?$',
+    '^(?<prefix>.+)-(?<base>\d+\.\d+\.\d+(?:\.\d+)?)-(?<timestamp>\d{8}\.\d{6})-(?<build>\d+)(?<classifier>-[^.]+)?(?<ext>\.(?:jar|pom)(?:\.(?:md5|sha1))?)?$',
     [System.Text.RegularExpressions.RegexOptions]::Compiled
 )
 
