@@ -1,0 +1,23 @@
+# Habitv plugin artifact ids (one per line, matches Maven artifactId)
+6play
+adobeHDS
+aria2
+arte
+beinsport
+canalPlus
+clubic
+cmd
+curl
+email
+ffmpeg
+file
+footyroom
+globalnews
+lequipe
+mlssoccer
+pluzz
+RSS
+rtmpDump
+sfr
+wat
+youtube
