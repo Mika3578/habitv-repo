@@ -3,16 +3,16 @@
   <groupId>com.dabi.habitv</groupId>
   <artifactId>application</artifactId>
   <versioning>
-    <lastUpdated>20260518125321</lastUpdated>
+    <lastUpdated>20260518163022</lastUpdated>
     <snapshot>
-      <timestamp>20260518.125321</timestamp>
+      <timestamp>20260518.163022</timestamp>
       <buildNumber>1</buildNumber>
     </snapshot>
     <snapshotVersions>
       <snapshotVersion>
         <extension>pom</extension>
-        <value>4.1.0-20260518.125321-1</value>
-        <updated>20260518125321</updated>
+        <value>4.1.0-20260518.163022-1</value>
+        <updated>20260518163022</updated>
       </snapshotVersion>
     </snapshotVersions>
   </versioning>
