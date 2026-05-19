@@ -1,5 +1,6 @@
 # Habitv plugin artifact ids (one per line, matches Maven artifactId)
 6play
+RSS
 adobeHDS
 aria2
 arte
@@ -16,7 +17,6 @@ globalnews
 lequipe
 mlssoccer
 pluzz
-RSS
 rtmpDump
 sfr
 wat

@@ -3,21 +3,21 @@
   <groupId>com.dabi.habitv</groupId>
   <artifactId>rtmpDump</artifactId>
   <versioning>
-    <lastUpdated>20260518163022</lastUpdated>
+    <lastUpdated>20260518215547</lastUpdated>
     <snapshot>
-      <timestamp>20260518.163022</timestamp>
+      <timestamp>20260518.215547</timestamp>
       <buildNumber>1</buildNumber>
     </snapshot>
     <snapshotVersions>
       <snapshotVersion>
         <extension>pom</extension>
-        <value>4.1.0-20260518.163022-1</value>
-        <updated>20260518163022</updated>
+        <value>4.1.0-20260518.215547-1</value>
+        <updated>20260518215547</updated>
       </snapshotVersion>
       <snapshotVersion>
         <extension>jar</extension>
-        <value>4.1.0-20260518.163022-1</value>
-        <updated>20260518163022</updated>
+        <value>4.1.0-20260518.215547-1</value>
+        <updated>20260518215547</updated>
       </snapshotVersion>
     </snapshotVersions>
   </versioning>

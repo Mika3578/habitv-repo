@@ -180,7 +180,8 @@ function Get-SnapshotBuildGroups {
         $groups[$buildKey].Add($entry.FullName)
     }
 
-    return $groups
+    # Comma prefix prevents PowerShell from unwrapping a single-key hashtable return value.
+    return ,$groups
 }
 
 function Get-BuildsToKeep {
@@ -298,7 +299,7 @@ foreach ($snapshotDirectory in $snapshotDirectories) {
         $metadataReferencedBuildKey = $null
     }
 
-    $buildGroups = Get-SnapshotBuildGroups -SnapshotDirectory $snapshotDirectory.FullName
+    [hashtable]$buildGroups = Get-SnapshotBuildGroups -SnapshotDirectory $snapshotDirectory.FullName
     if ($buildGroups.Count -eq 0) {
         Write-Log "No timestamped SNAPSHOT artifacts found; skipping."
         $skippedDirectories.Add($relativePath)
@@ -313,9 +314,10 @@ foreach ($snapshotDirectory in $snapshotDirectories) {
         [void]$buildsToKeepSet.Add($buildKey)
     }
 
-    Write-Log "Builds to keep ($($buildsToKeep.Count)): $($buildsToKeep -join ', ')"
+    $buildsToKeepList = @($buildsToKeep)
+    Write-Log "Builds to keep ($($buildsToKeepList.Count)): $($buildsToKeepList -join ', ')"
 
-    foreach ($buildKey in ($buildsToKeep | Sort-Object)) {
+    foreach ($buildKey in ($buildsToKeepList | Sort-Object)) {
         $keptBuildsLog.Add("$relativePath :: $buildKey")
     }
 
@@ -325,7 +327,7 @@ foreach ($snapshotDirectory in $snapshotDirectories) {
         }
 
         $filesToDelete = @($buildGroups[$buildKey])
-        Write-Log "Pruning build: $buildKey ($($filesToDelete.Count) file(s))"
+        Write-Log "Pruning build: $buildKey ($(@($filesToDelete).Count) file(s))"
         $removed = Remove-BuildFiles -FilePaths $filesToDelete -RepositoryRootFull $repositoryRootFull -IsDryRun $isDryRun
         foreach ($path in $removed) {
             $deletedFiles.Add([System.IO.Path]::GetRelativePath($repositoryRootFull, $path))
