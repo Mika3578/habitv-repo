@@ -3,27 +3,27 @@
   <groupId>com.dabi.habitv</groupId>
   <artifactId>consoleView</artifactId>
   <versioning>
-    <lastUpdated>20260519221134</lastUpdated>
+    <lastUpdated>20260530144853</lastUpdated>
     <snapshot>
-      <timestamp>20260519.221134</timestamp>
-      <buildNumber>1</buildNumber>
+      <timestamp>20260530.144853</timestamp>
+      <buildNumber>2</buildNumber>
     </snapshot>
     <snapshotVersions>
       <snapshotVersion>
         <extension>pom</extension>
-        <value>4.1.0-20260519.221134-1</value>
-        <updated>20260519221134</updated>
+        <value>4.1.0-20260530.144853-2</value>
+        <updated>20260530144853</updated>
       </snapshotVersion>
       <snapshotVersion>
         <extension>jar</extension>
-        <value>4.1.0-20260519.221134-1</value>
-        <updated>20260519221134</updated>
+        <value>4.1.0-20260530.144853-2</value>
+        <updated>20260530144853</updated>
       </snapshotVersion>
       <snapshotVersion>
         <classifier>all</classifier>
         <extension>jar</extension>
-        <value>4.1.0-20260519.221134-1</value>
-        <updated>20260519221134</updated>
+        <value>4.1.0-20260530.144853-2</value>
+        <updated>20260530144853</updated>
       </snapshotVersion>
     </snapshotVersions>
   </versioning>
